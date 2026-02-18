@@ -1,0 +1,11 @@
+{
+    // 强制 VS Code CMake Tools 插件使用 CMakePresets.json 进行配置
+    "cmake.useCMakePresets": "always",
+    // 开启项目时自动运行 CMake 配置
+    "cmake.configureOnOpen": true,
+    // 构建产物的存放目录
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    // 设置 IntelliSense（代码补全/报错）使用的 C/C++ 标准版本
+    "C_Cpp.default.cppStandard": "c++23",
+    "C_Cpp.default.cStandard": "c11"
+}

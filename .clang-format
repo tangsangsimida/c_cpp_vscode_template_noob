@@ -1,0 +1,54 @@
+# --- Clang-Format 代码格式化详细配置 ---
+# 该文件定义了如何自动美化你的 C/C++ 代码。
+# 在 VS Code 中按 Shift + Alt + F 即可应用这些规则。
+
+# 基础风格选择
+BasedOnStyle: Google
+
+# --- 缩进与布局 ---
+# 缩进宽度（通常使用 4 个空格）
+IndentWidth: 4
+# 每一行代码的最大字符数，超过将自动换行
+ColumnLimit: 100
+# 连续缩进的宽度
+ContinuationIndentWidth: 4
+# 访问修饰符（public/private）的缩进
+AccessModifierOffset: -4
+
+# --- 空格规则 ---
+# 赋值运算符（=, += 等）两边是否加空格
+SpaceBeforeAssignmentOperators: true
+# 括号之前是否加空格
+SpaceBeforeParens: ControlStatements
+# 在空语句（{}）中是否保留空格
+SpaceInEmptyBlock: false
+# 逗号后面是否加空格
+SpaceAfterCStyleCast: false
+# 指针符号（*）和引用符号（&）的对齐方式：靠近变量名
+PointerAlignment: Right
+
+# --- 换行与大括号 ---
+# 大括号换行风格：在函数定义、类定义、命名空间等处不换行（Attach）
+BreakBeforeBraces: Attach
+# 是否允许短函数写在同一行
+AllowShortFunctionsOnASingleLine: Empty
+# 是否允许短的 if 语句写在同一行
+AllowShortIfStatementsOnASingleLine: false
+# 是否允许短的循环语句写在同一行
+AllowShortLoopsOnASingleLine: false
+
+# --- 对齐方式 ---
+# 函数参数换行时是否对齐
+AlignAfterOpenBracket: Align
+# 连续宏定义是否对齐
+AlignConsecutiveMacros: true
+# 连续赋值语句是否对齐
+AlignConsecutiveAssignments: false
+# 尾随注释（代码行末的注释）是否对齐
+AlignTrailingComments: true
+
+# --- 其他 ---
+# 自动排序头文件（#include），保持整洁
+SortIncludes: true
+# 强制使用传统的 C++ 风格注释样式
+# （Clang-format 默认行为）

@@ -1,0 +1,8 @@
+{
+    // 推荐初学者安装的必备插件，确保 C++ 开发体验完整
+    "recommendations": [
+        "ms-vscode.cpptools", // C/C++ 核心支持（调试、跳转）
+        "ms-vscode.cmake-tools", // CMake 集成支持
+        "ms-vscode.cpptools-extension-pack" // C/C++ 插件全家桶
+    ]
+}

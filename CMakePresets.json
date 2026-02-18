@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 22,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "default",
+      "displayName": "默认配置 (Ninja + GCC)",
+      "description": "这是最通用的配置预设，适用于大多数桌面环境",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "// 提示": "你可以在这里修改 C/C++ 的标准版本号（如 23, 20, 17, 11）",
+        "CPP_LEARNING_C_STD": "11",
+        "CPP_LEARNING_CXX_STD": "23"
+      }
+    },
+    {
+      "name": "debug-asan",
+      "displayName": "调试配置 (启用内存安全检测 ASan)",
+      "description": "启用 AddressSanitizer，运行速度稍慢但能瞬间捕捉内存越界和泄漏",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build-asan",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CPP_LEARNING_C_STD": "11",
+        "CPP_LEARNING_CXX_STD": "23",
+        "CMAKE_CXX_FLAGS_DEBUG": "-fsanitize=address -g",
+        "CMAKE_C_FLAGS_DEBUG": "-fsanitize=address -g",
+        "CMAKE_EXE_LINKER_FLAGS_DEBUG": "-fsanitize=address"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "default",
+      "configurePreset": "default",
+      "displayName": "默认构建"
+    },
+    {
+      "name": "debug-asan",
+      "configurePreset": "debug-asan",
+      "displayName": "构建 (ASan)"
+    }
+  ]
+}

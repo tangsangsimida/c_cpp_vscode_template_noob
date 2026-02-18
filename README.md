@@ -19,6 +19,8 @@
 - **构建系统**：[CMake 3.22+](https://cmake.org/) (跨平台构建标准)
 - **构建后端**：[Ninja](https://ninja-build.org/) (面向速度的高性能构建工具)
 - **编译器**：[GCC](https://gcc.gnu.org/) (Windows 环境建议使用 [MinGW-w64](https://www.mingw-w64.org/)，建议版本 12.0+)
+- **编辑器**：[Visual Studio Code](https://code.visualstudio.com/)
+    - **核心插件**：`C/C++ Extension Pack` (包含 IntelliSense、CMake Tools 等)
 - **调试器**：GDB (由 VS Code 插件自动识别)
 - **静态分析**：[Clang-Tidy](https://clang.llvm.org/extra/clang-tidy/) (自动集成于构建流程中)
 - **代码美化**：[Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) (支持一键格式化)

@@ -11,8 +11,8 @@
 2. **构建管理 (Build Tools)**: 
     - [CMake (3.22+)](https://cmake.org/): 核心构建系统。
     - [Ninja](https://ninja-build.org/): 极速构建后端。
-3. **IDE 增强**: 
-    - [VS Code](https://code.visualstudio.com/): 建议安装 `C/C++ Extension Pack` 插件。
+3. **编辑器 (IDE)**: 
+    - [Visual Studio Code](https://code.visualstudio.com/): 建议安装 `C/C++ Extension Pack` 插件包（重点包含 `C/C++` 语言支持、`CMake Tools` 构建支持以及 `Doxygen` 注释支持）。
 4. **辅助工具 (代码质量)**: 
     - `clang-format`: 用于代码自动美化。
     - `clang-tidy`: 用于静态分析（可选但推荐）。

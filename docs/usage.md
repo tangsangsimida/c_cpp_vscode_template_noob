@@ -1,17 +1,24 @@
 # 项目使用指南
 
-本手册旨在帮助新用户快速上手并充分利用该 C/C++ 学习模板提供的各种进阶功能。
+本手册旨在指导开发者快速上手，并充分利用本项目提供的自动化构建与进阶调试功能。
 
-## 环境准备
+## 环境准备 (Environment)
 
-在开始之前，请确保您的系统中已安装并配置好以下工具：
+在开始之前，请确保您的系统中已正确安装以下工业级工具链：
 
-1. **GCC/MinGW-w64**: 确保 C++ 编译器版本支持 C++11/C++23。
-2. **CMake (3.22+)**: 项目构建管理工具。
-3. **Ninja**: 高性能构建后端。
-4. **VS Code**: 建议安装 "C/C++ Extension Pack" 插件。
+1. **编译器 (Compiler)**: 
+    - 统一使用 [GCC](https://gcc.gnu.org/) 系列。在 Windows 环境下，建议通过 [MinGW-w64](https://www.mingw-w64.org/) 安装（建议版本 12.0+）。
+2. **构建管理 (Build Tools)**: 
+    - [CMake (3.22+)](https://cmake.org/): 核心构建系统。
+    - [Ninja](https://ninja-build.org/): 极速构建后端。
+3. **IDE 增强**: 
+    - [VS Code](https://code.visualstudio.com/): 建议安装 `C/C++ Extension Pack` 插件。
+4. **辅助工具 (代码质量)**: 
+    - `clang-format`: 用于代码自动美化。
+    - `clang-tidy`: 用于静态分析（可选但推荐）。
 
-所有工具的路径都应已添加到系统环境变量 PATH 中。
+**注意**：所有工具的可执行文件路径（如 `gcc.exe`, `cmake.exe`, `ninja.exe`）均需手动添加到系统的环境变量 `PATH` 中。
+
 
 ## 基础操作流
 

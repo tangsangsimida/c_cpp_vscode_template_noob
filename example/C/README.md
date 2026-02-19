@@ -21,6 +21,8 @@
 15. **[15_stdlib_adv](./15_stdlib_adv)**: 标准库与高级特性 (qsort/VLA)
 16. **[16_best_practices](./16_best_practices)**: 通用最佳实践与 UB 汇总
 17. **[17_virtual_function_impl](./17_virtual_function_impl)**: C 语言实现虚函数与多态 (OOP 模拟)
+18. **[18_advanced_features](./18_advanced_features)**: C 语言进阶用法 (内存池/跳转表/泛型宏/位操作)
+
 
 
 ## 如何阅读与编译

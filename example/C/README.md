@@ -20,6 +20,8 @@
 14. **[14_multi_file](./14_multi_file)**: 多文件编程与工程管理
 15. **[15_stdlib_adv](./15_stdlib_adv)**: 标准库与高级特性 (qsort/VLA)
 16. **[16_best_practices](./16_best_practices)**: 通用最佳实践与 UB 汇总
+17. **[17_virtual_function_impl](./17_virtual_function_impl)**: C 语言实现虚函数与多态 (OOP 模拟)
+
 
 ## 如何阅读与编译
 1. **独立编译（推荐）**：使用 VS Code 的 **“打开文件夹”** 功能，直接打开任意一个子目录（如 `07_pointers`）。由于每个目录都内置了独立的 `.vscode` 和 `CMakeLists.txt`，您可以直接在 VS Code 中点击“构建”或按 `F5` 进行调试，无需依赖根目录。
